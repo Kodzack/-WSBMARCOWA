@@ -9,3 +9,4 @@ Witam tu Jakub nr 2 przychodze z propozycja zeby sie tu podpisac zeby bylo wiado
 ja zaczne
 
 Jakub Hajdasz
+Jakub Grzesiak
