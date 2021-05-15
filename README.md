@@ -10,3 +10,4 @@ ja zaczne
 
 Jakub Hajdasz
 Jakub Grzesiak
+Jacek Szwedo
