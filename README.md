@@ -14,5 +14,7 @@ Jakub Grzesiak
 
 Jacek Szwedo
 
-Jakub Marcinkowski
+Jakub Marcinkowski\
+
+Konrad Dąbrowski
 
