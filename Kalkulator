@@ -180,3 +180,5 @@ default: cout<<"\nNie to nie, koniec programu.\n";break;
 }
 system("stop");
 }
+
+
