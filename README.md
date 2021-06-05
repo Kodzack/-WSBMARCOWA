@@ -18,3 +18,5 @@ Jakub Marcinkowski
 
 Konrad Dąbrowski
 
+Józef Stangret
+
