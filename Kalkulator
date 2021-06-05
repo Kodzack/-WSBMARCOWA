@@ -178,5 +178,5 @@ case 9: srednia(); system("cls"); main(); break;
 case 10: rownanie(); system("cls"); main(); break;
 default: cout<<"\nNie to nie, koniec programu.\n";break;
 }
-system("pause");
+system("stop");
 }
