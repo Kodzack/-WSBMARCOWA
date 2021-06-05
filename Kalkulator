@@ -1,0 +1,182 @@
+#include <iostream>
+#include <cstdlib>
+#include <math.h>
+using namespace std;
+
+int dodawanie()
+{
+int a,b;
+cout<<"\nDodawanie."<<endl;
+cout<<"Podaj wartosc liczby A: ";cin>>a;
+cout<<"Podaj wartosc liczby B: ";cin>>b;
+cout<<"Wynik dodawania liczb "<<a<<" i "<<b<<" = "<<a+b<<endl;
+system("pause");
+}
+int odejmowanie()
+{
+int a,b;
+cout<<"\nOdejmowanie."<<endl;
+cout<<"Podaj wartosc liczby A: ";cin>>a;
+cout<<"Podaj wartosc liczby B: ";cin>>b;
+cout<<"Wynik odejmowania liczb "<<a<<" i "<<b<<" = "<<a-b<<endl;
+system("pause");
+}
+int mnozenie()
+{
+int a,b;
+cout<<"\nMnozenie."<<endl;
+cout<<"Podaj wartosc liczby A: ";cin>>a;
+cout<<"Podaj wartosc liczby B: ";cin>>b;
+if (a==0)
+{
+cout<<"Nie mnozymy przez zero! Podaj liczbe A: ";cin>>a;
+}
+if (b==0)
+{
+cout<<"Nie mnozymy przez zero! Podaj liczbe B: ";cin>>b;
+}
+cout<<"Wynik mnozenia liczb "<<a<<" i "<<b<<" = "<<a*b<<endl;
+system("pause");
+}
+int dzielenie()
+{
+int a,b;
+cout<<"\nDzielenie."<<endl;
+cout<<"Podaj wartosc liczby A: ";cin>>a;
+cout<<"Podaj wartosc liczby B: ";cin>>b;
+if (a==0)
+{
+cout<<"Nie dzielimy przez zero! Podaj liczbe A: ";cin>>a;
+}
+if (b==0)
+{
+cout<<"Nie dzielimy przez zero! Podaj liczbe B: ";cin>>b;
+}
+cout<<"Wynik dzielenia liczb "<<a<<" i "<<b<<" = "<<a/b<<endl;
+system("pause");
+}
+int reszta()
+{
+int a,b;
+cout<<"\nReszta z dzielenia."<<endl;
+cout<<"Podaj wartosc liczby A: ";cin>>a;
+cout<<"Podaj wartosc liczby B: ";cin>>b;
+cout<<"Reszta z dzielenia "<<a<<" przez "<<b<<" = "<<a%b<<endl;
+system("pause");
+}
+int pierwiastek()
+{
+int a;
+cout<<"\nPierwiastek."<<endl;
+cout<<"Podaj wartosc liczby A: ";cin>>a;
+cout<<"Pierwiastek liczby "<<a<<" = "<<sqrt(a)<<endl;
+system("pause");
+}
+int potega()
+{
+int a,b;
+cout<<"\nPotega."<<endl;
+cout<<"Podaj podstawe potegi, liczbe A: ";cin>>a;
+cout<<"Podaj wykladnik potegi, liczbe B: ";cin>>b;
+cout<<"Potegowanie "<<a<<" do "<<b<<" = "<<pow(a,b)<<endl;
+system("pause");
+}
+long silnia()
+{
+int a;
+long int w=1;
+cout<<"\nSilnia."<<endl;
+cout<<"Podaj wartosc liczby A: ";cin>>a;
+for(int i=1;i<=a;i++) w=w*i;
+cout<<"Silnia liczby "<<a<<" = "<<w<<endl;
+system("pause");
+}
+int srednia()
+{
+int a,b;
+cout<<"\nSrednia arytmetyczna."<<endl;
+cout<<"Podaj wartosc liczby A: ";cin>>a;
+cout<<"Podaj wartosc liczby B: ";cin>>b;
+cout<<"Srednia liczb "<<a<<" i "<<b<<" = "<<(a+b)/2<<endl;
+system("pause");
+}
+int rownanie()
+{
+int a,b,c;
+cout<<"\nRownanie kwadratowe."<<endl;
+cout<<"Ax^2+Bx+C"<<endl;
+cout<<"Podaj wartosc liczby A: ";cin>>a;
+cout<<"Podaj wartosc liczby B: ";cin>>b;
+cout<<"Podaj wartosc liczby C: ";cin>>c;
+int d = b*b-4*a*c;
+if (a!=0)
+{
+if(d<0)
+cout<<"Rownanie nie ma pierwiastkow."<<endl;
+else
+{
+if (d==0)
+{
+double x=-b/(2*a);
+cout<<"Rownanie ma jeden pierwiastek x0 = "<<x<<endl;
+}
+else
+{
+double x1,x2;
+cout<<"Rownanie ma dwa pierwiastki:"<<endl;
+x1=(-b-sqrt(d))/(2*a);
+x2=(-b+sqrt(d))/(2*a);
+cout<<"x1 = "<<x1<<endl;
+cout<<"x2 = "<<x2<<endl;
+}
+}
+}
+else
+{
+cout << "Jest to rownanie liniowe"<<endl;
+if (b!=0)
+{
+cout<<"Posiada ono pierwiastek x = "<<(double)-c/b<<endl;
+}
+else
+if (c!=0)
+cout<<"Rownanie nie posiada pierwiastkow."<<endl;
+else
+cout<<"Rownanie ma nieskonczenie wiele rozwizan."<<endl;
+}
+system("pause");
+}
+int main()
+{
+int zadanie;
+cout<<"/. ---------------------\n/. SuperCalc 2k13 v1.1\n/. mruwa1z @ KLINrap.com\n/. ---------------------"<<endl;
+cout<<"\nDostepne dzialania matematyczne:\n"<<endl;
+cout<<" 1. Dodawanie "<<endl;
+cout<<" 2. Odejmowanie "<<endl;
+cout<<" 3. Mnozenie"<<endl;
+cout<<" 4. Dzielenie"<<endl;
+cout<<" 5. Reszta z dzielenia"<<endl;
+cout<<" 6. Pierwiastek"<<endl;
+cout<<" 7. Potega"<<endl;
+cout<<" 8. Silnia"<<endl;
+cout<<" 9. Srednia arytmetyczna"<<endl;
+cout<<" 10. Rownanie kwadratowe\n -"<<endl;
+cout<<" Dowolny znak aby wyjsc\n"<<endl;
+cout<<"Podaj numer dzialania, ktore chcesz wykonac: ";cin>>zadanie;system("cls");
+cout<<"/. ---------------------\n/. SuperCalc 2k13 v1.1\n/. mruwa1z @ KLINrap.com\n/. ---------------------"<<endl;
+switch(zadanie)
+{
+case 1: dodawanie(); system("cls"); main(); break;
+case 2: odejmowanie(); system("cls"); main(); break;
+case 3: mnozenie(); system("cls"); main(); break;
+case 4: dzielenie(); system("cls"); main(); break;
+case 5: reszta(); system("cls"); main(); break;
+case 6: pierwiastek(); system("cls"); main(); break;
+case 7: potega(); system("cls"); main(); break;
+case 8: silnia(); system("cls"); main(); break;
+case 9: srednia(); system("cls"); main(); break;
+case 10: rownanie(); system("cls"); main(); break;
+default: cout<<"\nNie to nie, koniec programu.\n";break;
+}
+system("pause");
+}
