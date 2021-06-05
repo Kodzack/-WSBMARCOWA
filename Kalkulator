@@ -3,15 +3,7 @@
 #include <math.h>
 using namespace std;
 
-int dodawanie()
-{
-int a,b;
-cout<<"\nDodawanie."<<endl;
-cout<<"Podaj wartosc liczby A: ";cin>>a;
-cout<<"Podaj wartosc liczby B: ";cin>>b;
-cout<<"Wynik dodawania liczb "<<a<<" i "<<b<<" = "<<a+b<<endl;
-system("pause");
-}
+
 int odejmowanie()
 {
 int a,b;
